@@ -1,0 +1,8 @@
+ENVIRONMENT=dev
+
+# Auth
+BASIC_PASSWORD=
+
+# Cloudflare
+ACCOUNT_ID=
+API_TOKEN=
