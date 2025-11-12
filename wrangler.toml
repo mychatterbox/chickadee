@@ -1,0 +1,30 @@
+name = "chickadee"
+main = "./dist/index.js"
+compatibility_date = "2024-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+[build]
+command = "pnpm run build"
+
+[assets]
+directory = "dist"
+
+[vars]
+ENVIRONMENT = "prod"
+ENGINE_DATASET = "chickadee"
+BASIC_USERNAME = "admin"
+
+[[analytics_engine_datasets]]
+binding = "ENGINE"
+dataset = "chickadee"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "8078595447b84cc683cab9145aa41864"
+
+[observability]
+enabled = true
+head_sampling_rate = 1.0
+
+[placement]
+mode = "smart"

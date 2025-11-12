@@ -1,0 +1,26 @@
+name = "chickadee-demo"
+main = "./dist/index.js"
+compatibility_date = "2024-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "dist"
+
+[vars]
+ENVIRONMENT = "demo"
+ENGINE_DATASET = "chickadee_demo"
+
+[[analytics_engine_datasets]]
+binding = "ENGINE"
+dataset = "chickadee_demo"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "33a1e296325f4d24b5158253ca9cf3bc"
+
+[observability]
+enabled = true
+head_sampling_rate = 1.0
+
+[placement]
+mode = "smart"

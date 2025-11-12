@@ -1,0 +1,11 @@
+@import "tailwindcss" source("../app");
+
+@plugin "daisyui" {
+  themes: pastel --default, sunset --prefersdark;
+}
+@plugin "@tailwindcss/typography";
+@plugin "@iconify/tailwind4";
+
+@theme {
+  --breakpoint-xs: 32rem;
+}
